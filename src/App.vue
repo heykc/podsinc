@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Now Loading Icon" src="./assets/icon.png">
     <icon-layer>
       <clock-view/>
     </icon-layer>
@@ -41,6 +41,11 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #2c3e50;
+  color: #fbfeff;
+  background-color: #313131;
+
+  img {
+    width: 10vw;
+  }
 }
 </style>
