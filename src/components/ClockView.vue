@@ -54,7 +54,7 @@ export default {
     updateDateTime() {
       const now = new Date();
       this.seconds = getZeroPad(now.getSeconds()) % 10;
-      this.$options.timer = window.setTimeout(this.updateDateTime, SECOND);
+      this.$options.timer = window.setTimeout(this.updateDateTime, 1000 - now.getMilliseconds());
     },
     toggleVolume() {
       if (this.volume === 0) {
